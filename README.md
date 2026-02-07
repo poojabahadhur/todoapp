@@ -38,18 +38,19 @@ This project demonstrates practical Flutter development skills, including local 
 
 ## 📂 Project Structure
 
+```text
 lib/
- ├── main.dart                # Application entry point
- ├── data/
- │   └── database.dart        # Hive database logic
- ├── pages/
- │   └── home_page.dart       # Main home screen
- ├── util/
- │   ├── dialogbox.dart       # Add / Edit task dialog
- │   ├── mybuttons.dart       # Custom reusable buttons
- │   └── todo_tile.dart       # Individual task widget
+├── main.dart                 # Application entry point
+├── data/
+│   └── database.dart         # Hive database logic
+├── pages/
+│   └── home_page.dart        # Main home screen
+├── util/
+│   ├── dialogbox.dart        # Add / Edit task dialog
+│   ├── mybuttons.dart        # Custom reusable buttons
+│   └── todo_tile.dart        # Individual task widget
+```
 
----
 
 ## ⚙️ Getting Started
 
