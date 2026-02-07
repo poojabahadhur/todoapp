@@ -1,21 +1,23 @@
-# 📝 My To-Do List App
+# 📝 To-Do App
 
-A simple, clean, and intuitive To-Do List mobile application built using Flutter.
-The app helps users organize daily tasks by allowing them to create tasks, view creation time, track due duration, and mark tasks as completed through a minimal and user-friendly interface.
+A clean and intuitive To-Do List mobile application built using Flutter.
+The app helps users efficiently manage daily tasks by allowing them to add, edit, delete, and complete tasks, with all data stored locally on the device.
 
-This project demonstrates practical Flutter development skills, including UI composition, widget reuse, basic state handling, and date/time management.
+This project demonstrates practical Flutter development skills, including local data persistence using Hive, clean UI design, reusable widgets, and date/time handling.
 
 ---
 
 ## 🚀 Features
 
-- Add new to-do tasks
-- Display task creation date and time
-- Show due duration in minutes
+- Add new tasks
+- Edit existing tasks
+- Delete tasks
 - Mark tasks as completed
-- Clean and minimal UI design
-- Floating Action Button for quick task creation
-- Reusable widgets for better code organization
+- Persist tasks locally using Hive
+- Display task creation date and time
+- Swipe actions for task management using flutter_slidable
+- Clean and minimal Material UI
+- Smooth and responsive user experience
 
 ---
 
@@ -24,9 +26,13 @@ This project demonstrates practical Flutter development skills, including UI com
 - Framework: Flutter
 - Language: Dart
 - UI Design: Material UI
-- State Management: setState
-- Data Handling: Local in-memory / custom database logic
-- Platforms: Android (project supports iOS, Web, Windows, macOS, Linux)
+- Local Storage: Hive & Hive Flutter
+- State Handling: Flutter widget state
+- Date & Time Formatting: intl
+- UI Interactions: flutter_slidable
+- Platforms Tested:
+  - Android (physical device)
+  - Android & iOS virtual emulators
 
 ---
 
@@ -35,62 +41,66 @@ This project demonstrates practical Flutter development skills, including UI com
 lib/
  ├── main.dart                # Application entry point
  ├── data/
- │   └── database.dart        # Task data handling logic
+ │   └── database.dart        # Hive database logic
  ├── pages/
- │   └── home_page.dart       # Main home screen UI
+ │   └── home_page.dart       # Main home screen
  ├── util/
- │   ├── dialogbox.dart       # Add task dialog UI
+ │   ├── dialogbox.dart       # Add / Edit task dialog
  │   ├── mybuttons.dart       # Custom reusable buttons
- │   └── todo_tile.dart       # Individual to-do item widget
+ │   └── todo_tile.dart       # Individual task widget
 
 ---
 
 ## ⚙️ Getting Started
 
-Prerequisites:
-- Flutter SDK installed
-- Android Studio / VS Code
-- Android Emulator or physical device
+### Prerequisites
+- Flutter SDK (>= 3.7.2)
+- Android Studio or VS Code
+- Emulator or physical device
 
-Installation:
+### Steps
 
-1. Clone the repository
-   git clone https://github.com/your-username/todoapp.git
+1. Clone the repository  
+   git clone https://github.com/poojabahadhur/todoapp.git
 
-2. Navigate to the project directory
+2. Navigate to the project directory  
    cd todoapp
 
-3. Install dependencies
+3. Install dependencies  
    flutter pub get
 
-4. Run the application
+4. Generate Hive adapters  
+   flutter pub run build_runner build
+
+5. Run the application  
    flutter run
 
 ---
 
 ## 🎯 Learning Outcomes
 
-- Building structured Flutter widget trees
-- Creating reusable and modular UI components
-- Handling user input and state updates
-- Working with date and time in Dart
-- Organizing Flutter projects using clean folder architecture
+- Implementing local data persistence using Hive
+- Managing the complete task lifecycle (add, edit, delete, complete)
+- Designing clean and reusable Flutter widgets
+- Implementing swipe-based UI interactions
+- Working with date and time using intl
+- Structuring Flutter projects using best practices
 
 ---
 
 ## 🔮 Future Enhancements
 
 - Task reminders and notifications
-- Persistent local storage (Hive / SQLite)
-- Edit and delete tasks
 - Dark mode support
-- Cloud sync using Firebase
+- Search and filter functionality
+- Task categories or priorities
+- Cloud backup and synchronization
 
 ---
 
 ## 👩‍💻 Author
 
-Bahadhur Sri Pooja
+Bahadhur Sri Pooja  
 Flutter Developer
 
 ---
