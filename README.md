@@ -1,44 +1,57 @@
-# 📝 To-Do App
+📘 TaskFlow – To-Do List & Productivity App
 
-A clean and intuitive To-Do List mobile application built using Flutter.
-The app helps users efficiently manage daily tasks by allowing them to add, edit, delete, and complete tasks, with all data stored locally on the device.
+TaskFlow is a Flutter-based mobile application designed to help users efficiently manage their daily tasks and stay organized.
+The app provides a clean and intuitive interface for creating, editing, completing, and deleting tasks, with fully offline local data storage.
 
-This project demonstrates practical Flutter development skills, including local data persistence using Hive, clean UI design, reusable widgets, and date/time handling.
+It focuses on simplicity, performance, and smooth user interaction while demonstrating practical Flutter development concepts.
 
----
+✨ Features
 
-## 🚀 Features
+Create new tasks
 
-- Add new tasks
-- Edit existing tasks
-- Delete tasks
-- Mark tasks as completed
-- Persist tasks locally using Hive
-- Display task creation date and time
-- Swipe actions for task management using flutter_slidable
-- Clean and minimal Material UI
-- Smooth and responsive user experience
+Edit existing tasks
 
----
+Delete tasks
 
-## 🛠️ Tech Stack
+Mark tasks as completed
 
-- Framework: Flutter
-- Language: Dart
-- UI Design: Material UI
-- Local Storage: Hive & Hive Flutter
-- State Handling: Flutter widget state
-- Date & Time Formatting: intl
-- UI Interactions: flutter_slidable
-- Platforms Tested:
-  - Android (physical device)
-  - Android & iOS virtual emulators
+Swipe actions for task management using flutter_slidable
 
----
+Display task creation date and time
 
-## 📂 Project Structure
+Clean and minimal Material UI
 
-```text
+Smooth and responsive user experience
+
+Fully offline local data persistence using Hive
+
+🛠 Tech Stack
+
+Framework: Flutter
+
+Language: Dart
+
+Local Storage: Hive & Hive Flutter
+
+State Management: Flutter Widget State
+
+Date & Time Formatting: intl
+
+UI Interactions: flutter_slidable
+
+💻 Development Environment
+
+IDE: Visual Studio Code
+
+Platform Tested:
+
+Android (Physical Device)
+
+Android Emulator
+
+iOS Emulator
+
+📂 Project Structure
 lib/
 ├── main.dart                 # Application entry point
 ├── data/
@@ -49,67 +62,89 @@ lib/
 │   ├── dialogbox.dart        # Add / Edit task dialog
 │   ├── mybuttons.dart        # Custom reusable buttons
 │   └── todo_tile.dart        # Individual task widget
-```
+▶️ How to Run the Project
+Prerequisites
 
+Flutter SDK (>= 3.7.2)
 
-## ⚙️ Getting Started
+Android Studio or VS Code
 
-### Prerequisites
-- Flutter SDK (>= 3.7.2)
-- Android Studio or VS Code
-- Emulator or physical device
+Emulator or Physical Device
 
-### Steps
+Steps
 
-1. Clone the repository  
-   git clone https://github.com/poojabahadhur/todoapp.git
+Clone the repository
 
-2. Navigate to the project directory  
-   cd todoapp
+git clone https://github.com/poojabahadhur/todoapp.git
 
-3. Install dependencies  
-   flutter pub get
+Navigate to the project directory
 
-4. Generate Hive adapters  
-   flutter pub run build_runner build
+cd todoapp
 
-5. Run the application  
-   flutter run
+Install dependencies
 
----
+flutter pub get
 
-## 🎯 Learning Outcomes
+Generate Hive adapters
 
-- Implementing local data persistence using Hive
-- Managing the complete task lifecycle (add, edit, delete, complete)
-- Designing clean and reusable Flutter widgets
-- Implementing swipe-based UI interactions
-- Working with date and time using intl
-- Structuring Flutter projects using best practices
+flutter pub run build_runner build
 
----
+Run the application
 
-## 🔮 Future Enhancements
+flutter run
+🏗 Architecture Overview
 
-- Task reminders and notifications
-- Dark mode support
-- Search and filter functionality
-- Task categories or priorities
-- Cloud backup and synchronization
+The application follows a simple layered structure:
 
----
+UI Layer – Pages and reusable widgets
 
-## 👩‍💻 Author
+State Layer – Local widget state management
 
-Bahadhur Sri Pooja  
-Flutter Developer
+Data Layer – Hive database for persistent storage
 
----
+This structure ensures separation of concerns and maintainable code.
 
-## 📄 License
+📌 Project Information
+
+Project Type: Independent Flutter Project
+
+Focus: Task management and productivity
+
+Data Storage: Fully offline using Hive local database
+
+🎯 Learning Outcomes
+
+Implementing local data persistence using Hive
+
+Managing the complete task lifecycle (Add, Edit, Delete, Complete)
+
+Designing reusable Flutter widgets
+
+Implementing swipe-based UI interactions
+
+Handling date and time formatting using intl
+
+Structuring Flutter projects using best practices
+
+🔮 Future Enhancements
+
+Task reminders and notifications
+
+Dark mode support
+
+Search and filter functionality
+
+Task categories or priority levels
+
+Cloud backup and synchronization
+
+👩‍💻 Author
+
+Bahadhur Sri Pooja
+B.Tech CSE (AI & ML) | Flutter Developer | Passionate about building productivity tools
+
+📄 License
 
 This project is open-source and available for learning and educational purposes.
 
----
-
-If you find this project useful, feel free to star the repository!
+If you find this project useful, feel free to ⭐ star the repository.
