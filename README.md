@@ -45,20 +45,22 @@ It focuses on simplicity, performance, and smooth user interaction while demonst
 
 ## 📂 Project Structure
 
-
+```plaintext
 lib/
-├── main.dart # Application entry point
+│
+├── main.dart                     # Application entry point
+│
 ├── data/
-│ └── database.dart # Hive database logic
+│   └── database.dart             # Hive database logic
+│
 ├── pages/
-│ └── home_page.dart # Main home screen
-├── util/
-│ ├── dialogbox.dart # Add / Edit task dialog
-│ ├── mybuttons.dart # Custom reusable buttons
-│ └── todo_tile.dart # Individual task widget
-
-
----
+│   └── home_page.dart            # Main home screen
+│
+└── util/
+    ├── dialogbox.dart            # Add / Edit task dialog
+    ├── mybuttons.dart            # Custom reusable buttons
+    └── todo_tile.dart            # Individual task widget
+```
 
 ## ▶️ How to Run the Project
 
